@@ -46,7 +46,8 @@ Specification / Thông số	Details / Chi tiết
 Latest Version / Phiên bản	v1.2.1
 Android Support / Hỗ trợ	Android 8.0 (minSdk 26) – Android 14 (targetSdk 34)
 Architectures / Kiến trúc	arm64-v8a, armeabi-v7a
-Tech Stack / Công nghệ	Kotlin, Jetpack Compose, Rust (rustc 1.100), JNI, DataStore, WorkManager
+Tech Stack / Công nghệ	Kotlin, Jetpack Compose, Rust (rustc 1.100), JNI, DataStore, WorkManager.
+
  Download here https://github.com/dinoking-iot/TuiMem/releases/tag/TuiMem
  
 Installation / Cài đặt nhanh:
