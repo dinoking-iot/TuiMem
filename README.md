@@ -1,33 +1,56 @@
-🚀 TuiMem — Android Performance Monitor & Optimizer powered by Rust Core & On-Device AI!
-🚀 TuiMem — Ứng dụng Giám sát & Tối ưu Hiệu năng Android với Lõi Rust và AI On-Device!
-Looking for a lightweight, battery-friendly tool to keep your Android device smooth without requiring Root? Meet TuiMem (tuimem.apk) — a next-generation memory management app inspired by Samsung Memory Guardian's architecture, supercharged with an ultra-fast Rust core and real-time on-device Artificial Intelligence.
-Bạn đang tìm kiếm một công cụ nhẹ nhàng, tiết kiệm pin giúp điện thoại Android luôn mượt mà mà không cần Root? Hãy trải nghiệm TuiMem (tuimem.apk) — giải pháp quản lý bộ nhớ thế hệ mới lấy cảm hứng từ kiến trúc Samsung Memory Guardian, được nâng cấp toàn diện với lõi Rust siêu tốc và trí tuệ nhân tạo chạy trực tiếp trên thiết bị.
 
-✨ Key Features / Điểm nổi bật
+🚀 TuiMem (tuimem.apk)
 
-🦀 Pure Rust Core (libtuimem_core.so) / Sức mạnh từ Lõi Rust thuần túy
-• EN: Instead of relying on restricted, resource-heavy Android APIs, TuiMem's Rust core reads system metrics directly from /proc (/proc/meminfo, /proc/stat, /proc/<pid>). This delivers blazing speed, pinpoint accuracy, and minimal battery drain in a tiny ~1.7 MB package.
-• VI: Thay vì phụ thuộc vào các API Android truyền thống vốn bị giới hạn và tốn tài nguyên, lõi Rust của TuiMem đọc trực tiếp thông số hệ thống từ /proc (/proc/meminfo, /proc/stat, /proc/<pid>). Điều này mang lại tốc độ xử lý cực nhanh, độ chính xác cao và tiết kiệm pin tối đa với dung lượng siêu nhẹ chỉ ~1.7 MB.
-🧠 Smart On-Device AI — Fully Automated / AI On-Device thông minh — Tự động hóa hoàn toàn
-• EN: Zero internet required, zero lag. TuiMem uses an on-device linear regression AI model analyzing 7 real-time system features (RAM usage, RAM rising trend, CPU load, Swap, background processes, etc.) to calculate a 0–100 performance score. Since v1.1.0, the AI automatically determines the optimal optimization level to keep your phone smooth and RAM safe while conserving battery — just flip the switch and let AI handle the rest.
-• VI: Không cần mạng, không độ trễ. TuiMem tích hợp mô hình AI tuyến tính phân tích 7 đặc trưng hệ thống theo thời gian thực (mức RAM, xu hướng tăng RAM, tải CPU, Swap, tiến trình nền...) để chấm điểm hiệu năng từ 0–100. Từ bản v1.1.0, AI tự động tính toán mức tối ưu phù hợp nhất để giữ máy mượt mà, an toàn cho RAM và tiết kiệm pin — bạn chỉ cần bật công tắc và để AI lo phần còn lại.
-🛡️ Multi-Layer Anti-Kill Protection / Công nghệ chống bị OEM "Kill" đa tầng
-• EN: Aggressive background app killing on Xiaomi, OPPO, vivo, Samsung, and Huawei is a major headache. TuiMem solves this with:
-	• 3 Independent Keep-Alive Layers: Foreground Service (START_STICKY), WorkManager (15-min periodic check), and a hidden Account Sync channel. If one is stopped, the others wake it right back up.
-	• Notification Safety Net: Automatically restores the foreground service and notification within seconds if accidentally dismissed.
-	• OEM-Specific Assistant (AntiKillManager): Auto-detects your device manufacturer to provide tailored step-by-step guides and one-tap shortcuts to "Ignore Battery Optimizations" and "Auto-Start" settings.
-• VI: Việc các hãng (Xiaomi, OPPO, vivo, Samsung, Huawei) tự động đóng ứng dụng chạy ngầm là nỗi ám ảnh lớn nhất với các app tối ưu. TuiMem giải quyết triệt để nhờ:
-	• 3 lớp giữ sống độc lập: Kết hợp Foreground Service (START_STICKY), WorkManager (kiểm tra định kỳ 15 phút) và kênh đồng bộ ẩn Account Sync. Bất kỳ lớp nào còn sống đều sẽ đánh thức các lớp khác.
-	• Lưới an toàn Notification: Tự động khôi phục trạng thái chạy ngầm và thông báo chỉ sau vài giây nếu vô tình bị vuốt tắt.
-	• Trợ lý cấu hình theo hãng (AntiKillManager): Tự động nhận diện hãng máy để đưa ra hướng dẫn chi tiết và nút mở nhanh trang cài đặt "Bỏ tối ưu pin" & "Tự khởi động" chuẩn xác nhất.
-🔒 Safe, Transparent & Root-Free / An toàn, Minh bạch & Không cần Root
-• EN: 100% Non-Root using standard Android APIs (KILL_BACKGROUND_PROCESSES). Smart whitelist protects System UI, Google Play Services, your Launcher, and active heavy apps. Features a modern Jetpack Compose UI with built-in EN/VI language switching.
-• VI: 100% không cần Root, chỉ dùng API chuẩn của Android (KILL_BACKGROUND_PROCESSES). Whitelist thông minh bảo vệ tuyệt đối System UI, Google Play Services, Launcher và các app đang chạy tác vụ nặng. Giao diện Jetpack Compose hiện đại, hỗ trợ chuyển đổi song ngữ Anh/Việt trực tiếp trong app.
+Android Performance Monitor & Optimizer powered by Pure Rust Core & On-Device AI
+Ứng dụng Giám sát & Tối ưu Hiệu năng Android với Lõi Rust thuần túy & AI On-Device
+🌐 Language / Ngôn ngữ: English • Tiếng Việt
 
-📱 Specs & Installation / Thông số & Cài đặt
+🇬🇧 English
 
-• Compatibility / Tương thích: Android 8.0 (SDK 26) – Android 14 (Target SDK 34)
-• Architectures / Kiến trúc: arm64-v8a & armeabi-v7a
-• Current Version / Phiên bản hiện tại: v1.2.1
-• How to install / Cách cài đặt: Download tuimem.apk, allow installation from unknown sources, and open the app. On first launch, follow the one-tap setup prompt to grant Battery & Auto-Start permissions for 24/7 protection. / Tải tuimem.apk, cho phép cài đặt từ nguồn không xác định và mở app. Ở lần mở đầu tiên, hãy làm theo hướng dẫn 1 chạm để cấp quyền Pin & Tự khởi động giúp TuiMem bảo vệ máy 24/7.
-Design by dinoking — facebook.com/biglinuxviet
+
+📖 Overview
+
+Inspired by Samsung Memory Guardian's architecture, TuiMem is a next-generation Android memory monitor and optimizer re-engineered with an ultra-fast Rust core (libtuimem_core.so) and an on-device AI scoring engine. Built to keep your device smooth and battery-friendly without requiring Root access.
+
+✨ Key Highlights
+
+• 🦀 Blazing-Fast Rust Core: Reads system metrics directly from /proc (/proc/meminfo, /proc/stat, /proc/<pid>) instead of heavy Android APIs — delivering near-zero overhead, pinpoint accuracy, and minimal battery drain in a tiny ~1.7 MB APK.
+• 🧠 Fully Automated On-Device AI: Analyzes 7 real-time system features (RAM usage, RAM rising trend, CPU load, Swap, process count, top RSS) via linear regression to compute a 0–100 performance score. Since v1.1.0, the AI automatically calculates the safest, smoothest optimization level — just toggle it on and let AI handle the rest.
+• 🛡️ Multi-Layer Anti-Kill Defense: Engineered to survive aggressive OEM background killers (Xiaomi, OPPO, vivo, Samsung, Huawei):
+	• 3 Independent Keep-Alive Layers: Foreground Service (START_STICKY) + WorkManager (15-min periodic check) + Hidden Account Sync channel.
+	• Notification Safety Net: Automatically revives the foreground service and notification within seconds if accidentally dismissed.
+	• Smart OEM Assistant (AntiKillManager): Auto-detects your device brand and provides tailored setup steps with one-tap shortcuts to Ignore Battery Optimizations & Auto-Start settings.
+• 🔒 Safe, Transparent & Root-Free: Uses strictly standard Android APIs (KILL_BACKGROUND_PROCESSES). Built-in smart whitelist protects System UI, Google Play Services, your Launcher, and active heavy apps. Supports instant EN / VI UI switching.
+
+🇻🇳 Tiếng Việt
+
+
+📖 Tổng quan
+
+Lấy cảm hứng từ kiến trúc của Samsung Memory Guardian, TuiMem là ứng dụng giám sát và tối ưu bộ nhớ Android thế hệ mới, được tái thiết kế với lõi xử lý viết bằng Rust (libtuimem_core.so) siêu tốc và mô hình AI chạy trực tiếp trên thiết bị. Giúp điện thoại luôn mượt mà, tiết kiệm pin mà hoàn toàn không cần Root.
+
+✨ Điểm nổi bật
+
+• 🦀 Lõi Rust thuần túy siêu nhẹ: Đọc trực tiếp thông số hệ thống từ /proc (/proc/meminfo, /proc/stat, /proc/<pid>) thay vì phụ thuộc vào các API Android nặng nề — mang lại tốc độ phản hồi tức thì, độ chính xác cao và tiết kiệm pin tối đa trong bộ cài chỉ ~1.7 MB.
+• 🧠 AI On-Device tự động hóa hoàn toàn: Phân tích 7 đặc trưng hệ thống theo thời gian thực (mức RAM, xu hướng tăng RAM, tải CPU, Swap, số lượng tiến trình, top RSS) để chấm điểm hiệu năng từ 0–100. Từ bản v1.1.0, AI tự động tính toán mức tối ưu cân bằng nhất giữa độ mượt, độ an toàn RAM và thời lượng pin — chỉ cần bật công tắc và để AI tự vận hành.
+• 🛡️ Công nghệ chống bị OEM "Kill" đa tầng: Giải quyết triệt để tình trạng đóng app ngầm trên Xiaomi, OPPO, vivo, Samsung, Huawei:
+	• 3 lớp giữ sống độc lập: Foreground Service (START_STICKY) + WorkManager (kiểm tra mỗi 15 phút) + kênh đồng bộ ẩn Account Sync.
+	• Lưới an toàn Notification: Tự động khôi phục dịch vụ chạy ngầm và thông báo chỉ sau vài giây nếu vô tình bị vuốt tắt.
+	• Trợ lý cấu hình theo hãng (AntiKillManager): Tự động nhận diện hãng máy để hiển thị hướng dẫn từng bước cùng nút mở nhanh cài đặt Bỏ tối ưu pin & Tự khởi động.
+• 🔒 An toàn, Minh bạch & Không cần Root: Chỉ sử dụng API chuẩn của Android (KILL_BACKGROUND_PROCESSES). Whitelist thông minh bảo vệ tuyệt đối System UI, Google Play Services, Launcher và các ứng dụng nặng đang hoạt động. Hỗ trợ chuyển đổi song ngữ Anh / Việt ngay trên giao diện chính.
+
+📱 Technical Specs & Quick Start / Thông số & Cài đặt
+
+
+Specification / Thông số	Details / Chi tiết
+Latest Version / Phiên bản	v1.2.1
+Android Support / Hỗ trợ	Android 8.0 (minSdk 26) – Android 14 (targetSdk 34)
+Architectures / Kiến trúc	arm64-v8a, armeabi-v7a
+Tech Stack / Công nghệ	Kotlin, Jetpack Compose, Rust (rustc 1.100), JNI, DataStore, WorkManager
+
+Installation / Cài đặt nhanh:
+1. Download tuimem.apk from the Releases section (or install via adb install -r tuimem.apk).
+Tải file tuimem.apk tại mục Releases (hoặc cài qua lệnh adb install -r tuimem.apk).
+2. Open TuiMem and follow the one-tap setup prompt to grant Ignore Battery Optimizations & Auto-Start permissions for uninterrupted 24/7 protection.
+Mở TuiMem và làm theo hướng dẫn 1 chạm để cấp quyền Bỏ tối ưu pin & Tự khởi động giúp ứng dụng bảo vệ máy 24/7.
+Design by dinoking • Facebook.com/biglinuxviet
