@@ -47,7 +47,8 @@ Latest Version / Phiên bản	v1.2.1
 Android Support / Hỗ trợ	Android 8.0 (minSdk 26) – Android 14 (targetSdk 34)
 Architectures / Kiến trúc	arm64-v8a, armeabi-v7a
 Tech Stack / Công nghệ	Kotlin, Jetpack Compose, Rust (rustc 1.100), JNI, DataStore, WorkManager
-
+ Download here https://github.com/dinoking-iot/TuiMem/releases/tag/TuiMem
+ 
 Installation / Cài đặt nhanh:
 1. Download tuimem.apk from the Releases section (or install via adb install -r tuimem.apk).
 Tải file tuimem.apk tại mục Releases (hoặc cài qua lệnh adb install -r tuimem.apk).
