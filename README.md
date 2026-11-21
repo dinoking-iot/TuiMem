@@ -36,6 +36,6 @@ Hãy trải nghiệm TuiMem — ứng dụng giám sát và tối ưu hiệu nă
 
 🔒 An toàn tuyệt đối: Không cần Root, không thu thập dữ liệu, 100% xử lý offline.
 
-📥 Download / Tải về: [https://github.com/dinoking-iot/TuiMem/releases/tag/TuiMem1.3.2]
+📥 Download / Tải về: https://github.com/dinoking-iot/TuiMem/releases/tag/TuiMem1.3.2
 
 🎨 Design by dinoking — facebook.com/biglinuxviet
