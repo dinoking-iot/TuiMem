@@ -5,6 +5,7 @@
 Bạn từng dùng các app dọn rác nhưng càng dùng máy càng nóng, hao pin, hoặc bị hệ thống (Xiaomi, Samsung, OPPO, vivo...) tự động đóng mất sau vài phút? TuiMem sinh ra để giải quyết triệt để vấn đề này.
 
 ✨ Key Highlights / Điểm nổi bật:
+
 🦀 Native Rust Core (.so): Reads system stats directly from /proc at lightning speed (~1.78 MB APK size, zero bloat).
 Lõi xử lý viết bằng Rust: Đọc trực tiếp thông số hệ thống từ /proc cực nhanh, dung lượng siêu nhẹ (~1.78 MB).
 
@@ -20,5 +21,7 @@ Bản 1.4.0 siêu mát máy & tiết kiệm pin: Tự động giãn nhịp quét
 🔒 Safe & Private: No Root required, no internet needed, no tracking, supports EN/VI languages.
 An toàn & Minh bạch: Không cần Root, không cần mạng, hỗ trợ song ngữ Anh - Việt.
 
-👉 Download & Source Code / Tải về & Mã nguồn: [Chèn link GitHub hoặc link tải APK của bạn]
+👉 Download & Source Code / Tải về & Mã nguồn: 
+https://github.com/dinoking-iot/TuiMem/releases/tag/TuiMem1.4.0
+
 💬 Try it on your device and drop your feedback below! / Anh em cài thử trên máy mình và để lại bình luận nhận xét nhé!
